@@ -1,0 +1,18 @@
+[package]
+name = "solana-mail"
+version = "0.1.0"
+edition = "2018"
+license = "WTFPL"
+publish = false
+
+[dependencies]
+borsh = "0.9.1"
+borsh-derive = "0.9.1"
+solana-program = "=1.7.10"
+thiserror = "1.0.24"
+
+[features]
+test-bpf = []
+
+[lib]
+crate-type = ["cdylib", "lib"]
